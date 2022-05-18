@@ -13,3 +13,6 @@ alias fzf='winpty fzf.exe'
 
 # dotfiles config
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# CHISIM server path
+alias chisim='cd //illis-eitfil02/fpga/maschmalisc'
