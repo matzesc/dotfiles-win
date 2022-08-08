@@ -1,3 +1,0 @@
-[submodule ".config/doom"]
-	path = .config/doom
-	url = https://github.com/matzesc/doom-config.git
