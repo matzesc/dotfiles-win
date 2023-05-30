@@ -20,6 +20,10 @@ alias sshk='ssh-agent -k'
 alias sshl='ssh-add ~/.ssh/id_rsa ~/.ssh/id_ed25519;ssh-add -l'
 alias sshu='source ~/ssh-agent.sh'
 
+# miniconda
+alias cona='source /c/miniconda3/Scripts/activate'
+alias cond='conda deactivate'
+
 # dotfiles config
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
