@@ -46,6 +46,7 @@
 
 ;; use 4 spaces for tabs
 (setq-default tab-width 4)
+(setq tab-width 4)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
