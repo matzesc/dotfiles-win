@@ -18,6 +18,7 @@ alias ll='ls -la'
 alias ssha='ssh-agent -t 24h > ~/ssh-agent.sh;source ~/ssh-agent.sh'
 alias sshk='ssh-agent -k'
 alias sshl='ssh-add ~/.ssh/id_rsa ~/.ssh/id_ed25519;ssh-add -l'
+alias sshu='source ~/ssh-agent.sh'
 
 # dotfiles config
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
