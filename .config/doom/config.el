@@ -85,6 +85,10 @@
 
 ;; set mode for file extensions
 (add-to-list 'auto-mode-alist '("\\.xdc\\'" . tcl-mode))
+(add-to-list 'auto-mode-alist '("\\.qsf\\'" . tcl-mode))
+(add-to-list 'auto-mode-alist '("\\.qpf\\'" . tcl-mode))
+(add-to-list 'auto-mode-alist '("\\.qdf\\'" . tcl-mode))
+(add-to-list 'auto-mode-alist '("\\.sdc\\'" . tcl-mode))
 
 ;;(setq highlight-indent-guides-method 'character)
 ;;(set-face-foreground 'highlight-indent-guides-character-face "dimgray")
