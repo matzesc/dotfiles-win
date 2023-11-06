@@ -19,13 +19,13 @@ alias ll='ls -la'
 ##############################################################################
 ssh_env=~/.ssh/agent.env
 
-agent_load_ssh_env () { test -f "$ssh_env" && . "$ssh_env" >| /dev/null ; }
+agent_load_env () { test -f "$ssh_env" && . "$ssh_env" >| /dev/null ; }
 
 agent_start () {
     (umask 077; ssh-agent >| "$ssh_env")
     . "$ssh_env" >| /dev/null ; }
 
-agent_load_ssh_env
+agent_load_env
 
 # agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2=agent not running
 agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
@@ -40,7 +40,7 @@ fi
 unset ssh_env
 
 # for SSH
-#alias ssha='ssh-agent -t 24h > ~/ssh-agent.sh;source ~/.ssh/agent.env'
+#alias ssha='ssh-agent -t 24h > ~/.ssh/agent.env;source ~/.ssh/agent.env'
 alias sshk='ssh-agent -k'
 alias sshl='ssh-add;ssh-add -l'
 alias sshu='source ~/.ssh/agent.env'
