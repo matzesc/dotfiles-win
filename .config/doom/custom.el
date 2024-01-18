@@ -8,7 +8,7 @@
  '(custom-safe-themes
    '("071cb4e4867144e6288e8cfe3678949359fa88c2b46224ca573858771c6afc9f" default))
  '(indent-tabs-mode nil)
- '(show-paren-mode t)
+ '(magit-todos-insert-after '(bottom) nil nil "Changed by setter of obsolete option `magit-todos-insert-at'")
  '(size-indication-mode t)
  '(tab-width 4)
  '(tool-bar-mode nil)
@@ -56,5 +56,5 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Consolas" :foundry "outline" :slant normal :weight normal :height 98 :width normal)))))
+ '(default ((t (:family "Cascadia Mono" :foundry "outline" :slant normal :weight normal :height 98 :width normal)))))
 (put 'customize-save-customized 'disabled nil)

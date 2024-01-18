@@ -15,7 +15,7 @@
 ;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
 ;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
 ;;   presentations or streaming.
-;; - `doom-unicode-font' -- for unicode glyphs
+;; - `doom-symbol-font' -- for symbols
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
 ;;
 ;; See 'C-h v doom-font' for documentation and more examples of what they
@@ -81,7 +81,7 @@
 ;; they are implemented.
 
 ;; add path to build in Emacs help
-(add-to-list 'Info-directory-list "c:/emacs/28.1/share/info")
+(add-to-list 'Info-directory-list "c:/emacs/29.1_2/share/info")
 
 ;; set mode for file extensions
 (add-to-list 'auto-mode-alist '("\\.xdc\\'" . tcl-mode))
