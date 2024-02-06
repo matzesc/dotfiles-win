@@ -8,7 +8,7 @@
  '(custom-safe-themes
    '("071cb4e4867144e6288e8cfe3678949359fa88c2b46224ca573858771c6afc9f" default))
  '(indent-tabs-mode nil)
- '(magit-todos-insert-after '(bottom) nil nil "Changed by setter of obsolete option `magit-todos-insert-at'")
+ '(show-paren-mode t)
  '(size-indication-mode t)
  '(tab-width 4)
  '(tool-bar-mode nil)

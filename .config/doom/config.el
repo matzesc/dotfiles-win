@@ -81,7 +81,7 @@
 ;; they are implemented.
 
 ;; add path to build in Emacs help
-(add-to-list 'Info-directory-list "c:/emacs/29.1_2/share/info")
+(add-to-list 'Info-directory-list "c:/emacs/29.2/share/info")
 
 ;; set mode for file extensions
 (add-to-list 'auto-mode-alist '("\\.xdc\\'" . tcl-mode))
