@@ -1,5 +1,5 @@
 # emacs path
-export PATH=$PATH:/c/emacs/28.1/bin/:~/.config/emacs/bin/
+export PATH=$PATH:/c/emacs/29.1_2/bin/:~/.config/emacs/bin/
 
 # emacs alias
 
