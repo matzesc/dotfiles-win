@@ -1,5 +1,5 @@
 # emacs path
-export PATH=$PATH:/c/emacs/29.2/bin/:~/.config/emacs/bin/
+export PATH=$PATH:/c/emacs/29.2/bin/:~/.config/emacs/bin/:~/.local/bin/
 
 # emacs alias
 
@@ -13,6 +13,9 @@ alias emacsc='emacsclientw -a runemacs -c -f ~/.config/emacs/server/server'
 alias grep='grep --color'
 alias ll='ls -la'
 #alias fzf='winpty fzf.exe'
+alias fzfp="fzf --style full --preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'"
+alias fzfg='fzf --preview "bat --color=always --style=header,grid --line-range :500 {}"'
+
 
 ##############################################################################
 # Autostart SSH agent
@@ -52,3 +55,5 @@ alias cond='conda deactivate'
 
 # dotfiles config
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+eval "$(fzf --bash)"
