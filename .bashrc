@@ -1,5 +1,5 @@
 # emacs path
-export PATH=$PATH:/c/emacs/29.2/bin/:~/.config/emacs/bin/
+export PATH=$PATH:/c/emacs/29.2/bin/:~/.config/emacs/bin/:~/.local/bin/
 
 # emacs alias
 
@@ -13,6 +13,7 @@ alias emacsc='emacsclientw -a runemacs -c -f ~/.config/emacs/server/server'
 alias grep='grep --color'
 alias ll='ls -la'
 #alias fzf='winpty fzf.exe'
+alias fzfp="fzf --style full --preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'"
 
 ##############################################################################
 # Autostart SSH agent
@@ -46,12 +47,14 @@ alias sshl='ssh-add;ssh-add -l'
 alias sshu='source ~/.ssh/agent.env'
 ##############################################################################
 
-# miniconda
-alias cona='source /c/miniconda3/Scripts/activate'
-alias cond='conda deactivate'
-
 # dotfiles config
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # CHISIM server path
 alias chisim='cd //illis-eitfil02/fpga/maschmalisc'
+
+# Modelsim/Questa environment variables
+export MODEL_TECH_INI=/d/Mentor/questa_lib64_2020.4/modelsim.ini
+
+eval "$(fzf --bash)"
+source 'C:\Users\MaSchmalisc\.bash_completions\open-webui.sh'
