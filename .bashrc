@@ -1,5 +1,5 @@
 # emacs path
-export PATH=$PATH:/c/emacs/29.2/bin/:~/.config/emacs/bin/:~/.local/bin/
+export PATH=$PATH:/c/emacs/29.2/bin/:$HOME/.config/emacs/bin/
 
 # emacs alias
 
@@ -58,3 +58,5 @@ export MODEL_TECH_INI=/d/Mentor/questa_lib64_2020.4/modelsim.ini
 
 eval "$(fzf --bash)"
 source 'C:\Users\MaSchmalisc\.bash_completions\open-webui.sh'
+
+. "$HOME/.local/bin/env.sh"
