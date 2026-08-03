@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+# agent alias just calls cursor-agent.ps1 script
+exec powershell "$LOCALAPPDATA\cursor-agent\cursor-agent.ps1" "$@"
